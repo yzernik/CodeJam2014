@@ -31,4 +31,5 @@ target/
 *.war
 *.ear
 
+*.out
 *~
