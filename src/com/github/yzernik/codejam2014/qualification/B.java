@@ -32,15 +32,11 @@ public class B {
 		double rate = 2.0;
 		double totalTime = X / rate;
 
-		int n = 0;
-
 		while (totalTime < lastTotalTime) {
 			lastTotalTime = totalTime;
 			buildingsTime += timeForNextBuilding(C, rate);
-			rate = 2 + ((n + 1) * F);
+			rate += F;
 			totalTime = buildingsTime + (X / rate);
-
-			n++;
 		}
 
 		return Double.toString(lastTotalTime);
