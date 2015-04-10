@@ -27,10 +27,10 @@ public class B {
 
 	public String solve(double C, double F, double X) {
 
-		Double lastTotalTime = Double.MAX_VALUE;
-		Double buildingsTime = 0.0;
-		Double rate = 2.0;
-		Double totalTime = X / rate;
+		double lastTotalTime = Double.MAX_VALUE;
+		double buildingsTime = 0.0;
+		double rate = 2.0;
+		double totalTime = X / rate;
 
 		int n = 0;
 
@@ -46,7 +46,7 @@ public class B {
 		return Double.toString(lastTotalTime);
 	}
 
-	public Double timeForNextBuilding(double C, Double rate) {
+	public double timeForNextBuilding(double C, double rate) {
 		return C / rate;
 	}
 }
